@@ -1,0 +1,64 @@
+/* Reset CSS */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/* Exemple de style CSS */
+.colored-box {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.toggle-checkbox {
+    display: none;
+}
+
+.toggle-label {
+    cursor: pointer;
+}
+
+.content {
+    display: none;
+}
+
+.toggle-checkbox:checked ~ .content {
+    display: block;
+}
+
+.arrow {
+    display: inline-block;
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.toggle-checkbox:checked ~ .toggle-label .arrow {
+    transform: rotate(180deg);
+}
